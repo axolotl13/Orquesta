@@ -106,7 +106,7 @@ stage {
   .modal-dialog .modal-dialog-linked-button:insensitive, .hotplug-notification-item:insensitive, .notification-banner .notification-button:insensitive {
     color: #919190;
     border-color: #252526;
-    background-color: rgba(225, 225, 225, 0.13);
+    background-color: rgba(225, 225, 225, 0.05);
     box-shadow: none;
     text-shadow: none;
     icon-shadow: none; }
@@ -185,16 +185,16 @@ StEntry {
 .check-box StBin {
   width: 24px;
   height: 22px;
-  background-image: url("resource:///org/gnome/shell/theme/checkbox-off.svg"); }
+  background-image: url("checkbox-off.svg"); }
 
 .check-box:focus StBin {
-  background-image: url("resource:///org/gnome/shell/theme/checkbox-off-focused.svg"); }
+  background-image: url("checkbox-off-focused.svg"); }
 
 .check-box:checked StBin {
-  background-image: url("resource:///org/gnome/shell/theme/checkbox.svg"); }
+  background-image: url("checkbox.svg"); }
 
 .check-box:focus:checked StBin {
-  background-image: url("resource:///org/gnome/shell/theme/checkbox-focused.svg"); }
+  background-image: url("checkbox-focused.svg"); }
 
 /* Switches */
 .toggle-switch {
@@ -1071,9 +1071,9 @@ StScrollBar {
   spacing: 10px; }
 
 .nm-dialog-scroll-view {
-  border: 1px solid #202020;
+  border: 1px solid #313131;
   padding: 0;
-  background-color: #2d2d2d; }
+  background-color: rgba(255, 255, 255, 0.04); }
 
 .nm-dialog-item {
   font-size: 11pt;
@@ -1287,8 +1287,10 @@ StScrollBar {
   spacing: 12px; }
 
 #overviewGroup {
-  background-color: #242e3d; }
-
+  background-image: url('blurr.jpg');
+  background-size: cover;
+  /* background-color: #242e3d; } */
+}
 .overview-controls {
   padding-bottom: 32px; }
 
@@ -1298,7 +1300,7 @@ StScrollBar {
 
 .window-caption {
   color: #eeeeec;
-  background-color: rgba(31, 38, 47, 0.96);
+  background-color: rgba(10, 10, 10, 0.67);
   border-radius: 99px;
   padding: 6px 12px; }
 
@@ -1330,14 +1332,14 @@ StScrollBar {
   padding: 7px 9px;
   border-radius: 18px;
   color: rgba(238, 238, 236, 0.7);
-  background-color: #161b22;
-  border-color: #161b22;
+  background-color: #111111;
+  border-color: #111111;
   margin-top: 12px;
   margin-bottom: 6px; }
 
   .search-entry:hover {
-    background-color: #121212;
-    border-color: #121212;
+    background-color: #070707;
+    border-color: #070707;
     color: #fafaf9; }
 
   .search-entry:focus {
@@ -1422,7 +1424,7 @@ StScrollBar {
   background-color: rgba(225, 225, 225, 0.15);
   margin-bottom: 16px;
   padding: 10px;
-  border-radius: 36px; }
+  border-radius: 28px; }
 
 .dash-item-container .app-well-app, .show-apps {
   padding: 10px 1.5px 26px; }
@@ -1510,7 +1512,9 @@ StScrollBar {
 
 .app-folder-dialog {
   border-radius: 30px;
-  background-color: rgba(31, 38, 47, 0.93);
+  background-image: url('blurr.jpg');
+  background-size: auto;
+  /* background-color: rgba(255, 255, 255, 0.2); */
   padding: 12px 0px 12px 0px; }
   .app-folder-dialog .folder-name-container {
     padding: 24px 36px 0;
